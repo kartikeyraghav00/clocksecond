@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html>
+<head>
+<link rel="stylesheet" type="text/css" href="clockl2.css">
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+<script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+
+</head>
+<body  background="../images/back1.png" style="background-size: cover;">
+      <div class="progress" id="progress">
+            <div class="progress-bar bg-success" id="bar"> </div>
+      </div>
+    <div id="orient"><span><img src="../images/rotate.png"></span><span>Rotate The Screen</span></div>
+    
+    <div id="container">
+        <div id="bigbox">
+    <div class="col-md-12 col-sm-12 col-xs-12">
+        <div id="logo" onclick="location.href='https://brainule.com/';" class="pull-left">
+        <img src="../images/logo.png">
+        </div>
+        <div id="score">
+          Score:<span id="scorevalue">0</span>
+        </div>
+        
+        <audio id="myAudio1">
+            <source src="../images/correct2.MP3" type="audio/mp3">
+            Your browser does not support the audio element.
+        </audio>
+        <audio id="myAudio2">
+                <source src="../images/wrong.MP3" type="audio/mp3">
+                Your browser does not support the audio element.
+            </audio>
+        <audio id="myAudio3">
+                <source src="../images/game_over.MP3" type="audio/mp3">
+                Your browser does not support the audio element.
+        </audio>
+        
+        <div id="question">
+          Click The Start Game to PLAY!
+        </div>  
+                                   
+        <div id="container1">
+             <div class="col-md-12 col-sm-12">
+                 <div class="col-md-3 col-xs-3">                   
+                  <canvas id="canva1" width="250" height="250" class="box"></canvas>
+                  </div>
+                   <div class="col-md-3 col-xs-3">                   
+                  <canvas id="canva2" width="250" height="250" class="box"></canvas>
+                  </div>
+                   <div class="col-md-3 col-xs-3">
+                   <canvas id="canva3" width="250" height="250" class="box"></canvas>
+                  </div>
+                  <div class="col-md-3 col-xs-3">
+                  <canvas id="canva4" width="250" height="250" class="box"></canvas>
+                  </div>
+                </div>
+            </div>
+            <div class="col-md-12 test" >
+                <row>
+                    <div class="col-md-4 col-md-offset-3 col-sm-7 col-sm-offset-1 col-xs-6">
+                      <div id="startreset" class="test1"> Start Game</div>
+                    </div>
+                    <div class="col-md-3 col-sm-4 col-xs-6">
+                      <div id="timeremaining" class="test1">Time: <span id="timeremainingvalue">60</span>sec</div>
+                    </div>
+                </row>
+              </div> 
+          </div>
+        </div>
+    </div>
+   <script src="clockl2.js">
+
+    </script>
+      <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js">
+    </script>
+  </body>
+  </html>
